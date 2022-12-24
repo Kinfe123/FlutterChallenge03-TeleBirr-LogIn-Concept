@@ -29,13 +29,10 @@ class _HomeState extends State<Home> {
   final _emailController = TextEditingController();
   @override
   Widget build(BuildContext context) {
-    
-      SystemChrome.setSystemUIOverlayStyle(
-       SystemUiOverlayStyle(
-         statusBarColor: Colors.transparent
-         //color set to transperent or set your own color
-      )
-  );
+    SystemChrome.setSystemUIOverlayStyle(
+        SystemUiOverlayStyle(statusBarColor: Colors.transparent
+            //color set to transperent or set your own color
+            ));
     return Scaffold(
         appBar: PreferredSize(
           preferredSize: Size.fromHeight(MediaQuery.of(context).padding.top),
@@ -55,6 +52,7 @@ class _HomeState extends State<Home> {
                       children: [
                         Container(
                           alignment: Alignment.topRight,
+                         
                           child: Image(
                             image: AssetImage('images/v.png'),
                           ),
@@ -64,8 +62,8 @@ class _HomeState extends State<Home> {
                           right: 0,
                           child: Container(
                             alignment: Alignment.topRight,
-                            width: 37,
-                            height: 37,
+                            width: 35,
+                            height: 35,
                             decoration: BoxDecoration(
                               shape: BoxShape.circle,
                               color: Colors.white,
